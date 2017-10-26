@@ -121,6 +121,7 @@ RUN set -ex \
 		--enable-mods-shared=reallyall \
 		--enable-ssl \
 		--enable-deflate \
+		--enable-expires \
 	&& make -j "$(nproc)" \
 	&& make install \
 	&& make clean \
