@@ -120,6 +120,7 @@ RUN set -ex \
 		--with-mpm=prefork \
 		--enable-mods-shared=reallyall \
 		--enable-ssl \
+		--enable-expires \
 		--enable-deflate \
 	&& make -j "$(nproc)" \
 	&& make install \
